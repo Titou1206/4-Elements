@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 4 Éléments : Explorez l'Harmonie Sensorielle</title>
+    <meta name="description" content="Plongez dans une expérience unique où l'architecture novatrice vous guide à travers une exploration sensorielle des quatre éléments. Réveillez vos sens et reconnectez-vous avec la nature au sein de nos hôtels inspirés, où chaque détail architectural témoigne d'une profonde connexion avec la terre, l'air, l'eau et le feu.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="flex justify-between align-center">
+        <!-- menu burger -->
+        <div class="menu-burger">
+             <!-- W3C ressort en erreur car il ne faut pas mettre de div ou nav dans le label, mais on a pas le choix en full CSS, je laisse comme ça -->
+                <input type="checkbox" name="burger" id="burger">
+                <label class="checkmark-burger" for="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- menu lateral -->
+                <nav class="menu-lateral">
+                    <ul>
+                        <li><a href="Index.html" title="lien vers accueil hotels 4 éléments"><img class="logo" src="./assets/logo/logo-noir.png" alt="logo des hotels 4 elements"></a></li>
+                        <li><a class="a-menu animation" href="fire.html">Feu</a></li>
+                        <li><a class="a-menu" href="Index.html">Air</a></li>
+                        <li><a class="a-menu" href="Index.html">Terre</a></li>
+                        <li><a class="a-menu" href="Index.html">Eau</a></li>
+                        <li><a class="a-menu reserve" href="Index.html">Reserver</a></li>
+                        <li><a class="a-menu" href="Index.html">Se connecter</a></li>
+                        <li><a class="a-menu" href="#contact" title="lien vers l'onglet contact">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <!-- div gauche -->
+        <div class="header-gauche flex align-center menu-grd-ecran">
+            <!-- logo -->
+           <a href="Index.html" title="lien vers accueil hotels 4 éléments"><img class="logo anim-logo" src="./assets/logo/logo-noir.png" alt="logo des hotels 4 elements"></a>
+            <!-- menu hotel -->
+            <nav>
+                <ul class="menu flex">
+                    <li class="anim"><a class="a-menu" href="fire.html">Feu</a></li>
+                    <li class="anim"><a class="a-menu" href="Index.html">Air</a></li>
+                    <li class="anim"><a class="a-menu" href="Index.html">Terre</a></li>
+                    <li class="anim"><a class="a-menu" href="Index.html">Eau</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- div droite -->
+        <div class="header-droite flex align-center">
+            <!-- menu contact et réseaux -->
+            <nav>
+                <ul class="menu flex align-center">
+                    <li class="menu-grd-ecran anim"><a class="a-menu" href="#contact" title="lien vers l'onglet contact">Contact</a></li>
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page instagram"><svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.946 5.88965C7.84058 5.88965 5.33569 8.39453 5.33569 11.5C5.33569 14.6055 7.84058 17.1104 10.946 17.1104C14.0515 17.1104 16.5564 14.6055 16.5564 11.5C16.5564 8.39453 14.0515 5.88965 10.946 5.88965ZM10.946 15.1475C8.93921 15.1475 7.29858 13.5117 7.29858 11.5C7.29858 9.48828 8.93433 7.85254 10.946 7.85254C12.9578 7.85254 14.5935 9.48828 14.5935 11.5C14.5935 13.5117 12.9529 15.1475 10.946 15.1475ZM18.0945 5.66016C18.0945 6.3877 17.5085 6.96875 16.7859 6.96875C16.0584 6.96875 15.4773 6.38281 15.4773 5.66016C15.4773 4.9375 16.0632 4.35156 16.7859 4.35156C17.5085 4.35156 18.0945 4.9375 18.0945 5.66016ZM21.8103 6.98828C21.7273 5.23535 21.3269 3.68262 20.0427 2.40332C18.7634 1.12402 17.2107 0.723633 15.4578 0.635742C13.6511 0.533203 8.23608 0.533203 6.42944 0.635742C4.6814 0.71875 3.12866 1.11914 1.84448 2.39844C0.560303 3.67773 0.164795 5.23047 0.0769043 6.9834C-0.0256348 8.79004 -0.0256348 14.2051 0.0769043 16.0117C0.159912 17.7646 0.560303 19.3174 1.84448 20.5967C3.12866 21.876 4.67651 22.2764 6.42944 22.3643C8.23608 22.4668 13.6511 22.4668 15.4578 22.3643C17.2107 22.2812 18.7634 21.8809 20.0427 20.5967C21.322 19.3174 21.7224 17.7646 21.8103 16.0117C21.9128 14.2051 21.9128 8.79492 21.8103 6.98828ZM19.4763 17.9502C19.0955 18.9072 18.3582 19.6445 17.3962 20.0303C15.9558 20.6016 12.5378 20.4697 10.946 20.4697C9.35425 20.4697 5.9314 20.5967 4.49585 20.0303C3.53882 19.6494 2.80151 18.9121 2.41577 17.9502C1.84448 16.5098 1.97632 13.0918 1.97632 11.5C1.97632 9.9082 1.84937 6.48535 2.41577 5.0498C2.79663 4.09277 3.53394 3.35547 4.49585 2.96973C5.93628 2.39844 9.35425 2.53027 10.946 2.53027C12.5378 2.53027 15.9607 2.40332 17.3962 2.96973C18.3533 3.35059 19.0906 4.08789 19.4763 5.0498C20.0476 6.49023 19.9158 9.9082 19.9158 11.5C19.9158 13.0918 20.0476 16.5146 19.4763 17.9502Z" fill="#363A2B"/>
+                        </svg>
+                        </a></li>
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page facebook"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4185 0.5625H3.23096C2.60936 0.5625 2.01321 0.80943 1.57368 1.24897C1.13414 1.68851 0.887207 2.28465 0.887207 2.90625L0.887207 20.0938C0.887207 20.7154 1.13414 21.3115 1.57368 21.751C2.01321 22.1906 2.60936 22.4375 3.23096 22.4375H9.93262V15.0005H6.85645V11.5H9.93262V8.83203C9.93262 5.79736 11.7393 4.12109 14.5063 4.12109C15.8315 4.12109 17.2173 4.35742 17.2173 4.35742V7.33594H15.6904C14.186 7.33594 13.7168 8.26953 13.7168 9.22705V11.5H17.0752L16.5381 15.0005H13.7168V22.4375H20.4185C21.0401 22.4375 21.6362 22.1906 22.0757 21.751C22.5153 21.3115 22.7622 20.7154 22.7622 20.0938V2.90625C22.7622 2.28465 22.5153 1.68851 22.0757 1.24897C21.6362 0.80943 21.0401 0.5625 20.4185 0.5625Z" fill="#363A2B"/>
+                        </svg>
+                        </a></li>
+                </ul>
+            </nav>
+            <!-- bouton header -->
+            <div class="header-btn flex align-center menu-grd-ecran">
+                <button class="btn-small">Reserver</button>
+                <button class="btn-nobg">Se connecter</button>
+            </div>
+        </div>
+    </header>
+    <section class="hero flex align-center">
+        <!-- video absolute -->
+        <video class="assombri" src="./assets/video/hero-home.mp4" autoplay loop muted></video>
+        <!-- Titre -->
+        <h1><br>Voyagez au-delà des limites,<br>vivez l'harmonie des 4 éléments.</h1>
+        <!-- formulaire -->
+        <form class="flex" method="get">
+            <h4>Rechercher une disponibilité</h4>
+            <!-- choix hotel -->
+            <div class="form-hotel">
+                <label for="hotel">Choisir un hôtel</label>
+                <select name="hotel" id="hotel">
+                    <option value="terre">Hôtel terre</option>
+                    <option value="feu">Hôtel feu</option>
+                    <option value="air">Hôtel air</option>
+                    <option value="eau">Hôtel eau</option>
+                </select>
+            </div>
+            <!-- choix nbr -->
+            <div class="form-nbr">
+                <label for="number">Nbr de personnes</label>
+                <input type="number" name="number" id="number" placeholder="2" min="1" max="8">
+            </div>
+            <!-- choix date -->
+            <div class="form-date">
+                <label for="date">Choisir une date d'arrivée</label>
+                <input type="date" name="date" id="date" value="2024-02-11" min="2024-02-01" max="2026-08-31">
+            </div>
+            <!-- bouton chercher -->
+            <div class="flex form-btn">
+                <button class="btn-large">Chercher</button>
+            </div>
+        </form>
+    </section>
+    <!-- main -->
+    <main>
+        <!-- section feu -->
+        <section class="feu flex justify-between pl12">
+            <!-- description -->
+            <div class="container-descriptif">
+                <!-- titre hotel -->
+                <h2>Hôtel feu </h2>
+                <!-- localisation hotel -->
+                <div class="flex">
+                    <p class="flex align-center"><img src="./assets/icon/map-pin.svg" alt="picto localisation">Finlande</p>
+                    <p class="p-legend flex align-center"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-empty.svg" alt="picto étoile vide"> (325 avis)</p>
+                </div>
+                <!-- descriptif hotel -->
+                <p>L'hôtel Feu ne se situe bien sûr pas sur un volcan, mais en Finlande. Feu de la terre volcanique crachant non loin de là ses geysers, feu des volcans à l'horizon et, bien entendu, feu des aurores boréales que vous pourrez admirer tous les soirs par le toit vitré de votre chambre.</p>
+                <!-- bouton réserver -->
+                <button class="btn-large" onclick="window.location.href=fire.html">Reserver</button>
+            </div>
+            <!-- image hotel -->
+            <div class="container-image flex justify-between">
+                <!-- image grande -->
+                <div class="img-grd"><img class="img-animation" src="./assets/image/pres-feu-grand.jpg" alt="photo d'igloos au milieu d'une foret" title="Igloos au milieu de la foret"></div>
+                <!-- image petite -->
+                <div class="img-petit"><img class="img-animation" src="./assets/image/pres-feu-petit.jpg" alt="photo d'un chalet sous la neige avec aurore boréale" title="chalet, neige et aurore boréale"></div>
+            </div>
+        </section>
+        <!-- section air -->
+        <section class="air flex justify-between pr12">
+            <!-- image hotel -->
+            <div class="container-image flex justify-between">
+                <!-- image petite -->
+                <div class="img-petit"><img class="img-animation" src="./assets/image/pres-air-petit.jpg" alt="photo d'un pont suspendu au milieu de la foret amazonienne" title="Pont suspendu dans la foret amazonienne"></div>
+                 <!-- image grande -->
+                 <div class="img-grd"><img class="img-animation" src="./assets/image/pres-air-grand.jpg" alt="photo d'une tour sous les arbres" title="la tour sous les arbres"></div>
+            </div>
+            <!-- description -->
+            <div class="container-descriptif">
+                <!-- titre hotel -->
+                <h2>Hôtel Air</h2>
+                <!-- localisation hotel -->
+                <div>
+                    <p class="flex align-center"><img src="./assets/icon/map-pin.svg" alt="picto localisation">Brésil</p>
+                    <p class="p-legend flex align-center"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-empty.svg" alt="picto étoile vide"> (325 avis)</p>
+                </div>
+                <!-- descriptif hotel -->
+                <p>L'hôtel Air se situe à la frontière du Brésil et du Pérou.
+                    C'est un concept architectural innovant qui a permis une implantation à la cîme de la forêt pour offrir un panorama vertigineux et cotoyerchaque matin, de votre chambre (avec ou sans piscine), les oiseaux à votre réveil.</p>
+                <!-- bouton réserver -->
+                <button class="btn-large">Reserver</button>
+            </div>
+        </section>
+        <!-- section terre -->
+        <section class="terre flex justify-between pl12">
+            <!-- description -->
+            <div class="container-descriptif">
+                <!-- titre hotel -->
+                <h2>Hôtel Terre</h2>
+                <!-- localisation hotel -->
+                <div>
+                    <p class="flex align-center"><img src="./assets/icon/map-pin.svg" alt="picto localisation">Thaïlande</p>
+                    <p class="p-legend flex align-center"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-empty.svg" alt="picto étoile vide"> (325 avis)</p>
+                </div>
+                <!-- descriptif hotel -->
+                <p>L'hôtel Terre est situé dans des grottes naturelles en Thaïlande. Retaillées et aménagées avec beaucoup de soin, les chambres de l'hôtel vous offriront soit la fraîcheur et l'apaisement à près de vingt mètres de profondeur, soit un hâvre de paix ouvrant sur l'horizon de la mer au loin.</p>
+                <!-- bouton réserver -->
+                <button class="btn-large">Reserver</button>
+            </div>
+            <!-- image hotel -->
+            <div class="container-image flex justify-between">
+                <!-- image grande -->
+                <div class="img-grd"><img class="img-animation" src="./assets/image/pres-terre-grand.jpg" alt="photo d'une chambre dans une grotte" title="la chambre dans la grotte"></div>
+                <!-- image petite -->
+                <div class="img-petit"><img class="img-animation" src="./assets/image/pres-terre-petit.jpg" alt="photo d'une pièce de repas dans une grotte" title="petit déjeuner dans la grotte"></div>
+            </div>
+        </section>
+        <!-- section eau -->
+        <section class="eau flex justify-between pr12">
+            <!-- image hotel -->
+            <div class="container-image flex justify-between">
+                <!-- image petite -->
+                <div class="img-petit"><img class="img-animation" src="./assets/image/pres-eau-petit.jpg" alt="photo d'une personne nageant dans une eau limpide" title="nager avec les poissons"></div>
+                <!-- image grande -->
+                <div class="img-grd"><img class="img-animation" src="./assets/image/pres-eau-grand.jpg" alt="photo d'une chambre sous-marine" title="la chambre sous-marine"></div>
+            </div>
+            <!-- description -->
+            <div class="container-descriptif">
+                <!-- titre hotel -->
+                <h2>Hôtel Eau</h2>
+                <!-- localisation hotel -->
+                <div>
+                    <p class="flex align-center"><img src="./assets/icon/map-pin.svg" alt="picto localisation">Île du pacifique</p>
+                    <p class="p-legend flex align-center"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-full.svg" alt="picto étoile pleine"><img src="./assets/icon/star-empty.svg" alt="picto étoile vide"> (325 avis)</p>
+                </div>
+                <!-- descriptif hotel -->
+                <p>L'hôtel Eau est situé sur une île de 2 kilomètres carrés très exactement équidistante de Vladivostok et de Los Angeles. C'est le milieu duPacifique. Vous y disposerez de votre plage, de votre bateau et de votre majordome privés. Votre chambre est un caisson immergé à deux mètres sous l'eau.</p>
+                <!-- bouton réserver -->
+                <button class="btn-large">Reserver</button>
+            </div>
+        </section>
+        <!-- section concept -->
+        <section class="concept-archi flex justify-between prl12">
+            <!-- div concept -->
+            <div class="concept flex">
+                <!-- titre -->
+                <h3>Le concept</h3>
+                <!-- img -->
+                <div class="img-concept"><img class="img-animation" src="./assets/image/concept.jpg" alt="photo d'un batiment intégré à la nature" title="l'habitation adapté à son environnement"></div>
+                <!-- descriptif -->
+                <p>Depuis l'ouverture de ses 4 hôtels en 2012, 4 Éléments s'est démarqué en proposant des établissements exceptionnels dans des lieux uniques, symbolisant les quatre éléments : terre, eau, air et feu. Ces hôtels insolites, construits dans des endroits inattendus à travers la planète, incarnent notre volonté de révolutionner le tourisme en intégrant luxe, aventure et vision à long terme. Chacun de nos établissements offre un environnement et un service uniques, alliant la rigueur de l'hôtellerie de luxe à une proximité quotidienne avec les habitants. Explorez les environs avec des guides experts tels que des ethnologues, astrophysiciens, géologues et climatologues. Ce que nous vous proposons n'est pas un simple "tour", mais une véritable révolution.</p>
+            </div>
+            <!-- div architecture -->
+            <div class="architecture flex">
+                <!-- titre -->
+                <h3>L’architecture</h3>
+                <!-- div a reverse pour le format smartphone -->
+                <div class="archi-responsive flex">
+                    <!-- descriptif -->
+                    <p>L'architecture innovante constitue une étape supplémentaire vers l'exploration de l'Espace, représentant l'extension de notre civilisation vers ses aspects les plus avancés. S'immerger dans l'un de nos hôtels, c'est embrasser une expérience sensorielle où l'on peut se ressourcer au contact des matières représentatives des quatre éléments. C'est une opportunité de se découvrir en harmonie avec la terre, l'air, l'eau et le feu. Notre approche unique vise à transcender les frontières traditionnelles du voyage en offrant une expérience qui éveille les sens et connecte les visiteurs à la quintessence de chaque élément. En plongeant dans nos établissements, les clients sont invités à explorer l'intersection fascinante entre l'innovation architecturale etla nature environnante.</p>
+                    <!-- img -->
+                    <div class="img-archi"><img class="img-animation" src="./assets/image/architecture.jpg" alt="photo d'un hotel distingué" title="hotel distingué"></div>
+                </div>
+            </div>
+        </section>
+        <!-- section créateur -->
+        <section class="createur prl12">
+            <!-- titre  -->
+            <h3>Le mot du créateur</h3>
+            <!-- le mot -->
+            <div class="createur-responsive flex justify-between">
+                <div class="mot-createur">
+                    <!-- dessin en fond -->
+                    <img class="dessin" src="./assets/icon/guillemet.png" alt="image de gros guillement">
+                    <!-- descriptif -->
+                    <p>L'architecture innovante représente une avancée vers l'exploration de l'Espace, symbolisant l'extension de notre civilisation vers ses plus grandes aspirations. S'immerger dans nos hôtels, c'est vivre une expérience sensorielle, se ressourcer au contact des matières des quatre éléments. C'est une découverte en harmonie avec la terre, l'air, l'eau et le feu, où chaque détail architectural offre une connexion profonde avec ces éléments fondamentaux. Les témoignages de nos visiteurs soulignent l'impact transformateur de cette expérience immersive, décrivant une reconnexion unique avec la nature et une redécouverte de soi au sein de cet environnement exceptionnel. Cette approche révolutionnaire redéfinit les attentes du voyage, offrant non seulement un hébergement luxueux, mais une véritable aventure sensorielle qui transcende les limites conventionnelles du tourisme.</p>
+                    <!-- fonction -->
+                    <p><strong>Trinh Xuan Thuan</strong><br><span class="p-vert">Co-fondateur de 4 Eléments</span></p>
+                </div>
+                <!-- photo du créateur -->
+                <div class="portrait-createur"><img class="img-animation" src="./assets/image/createur.jpg" alt="photo du créateur de 4 Elements, Monsieur Trinh Xuan Thuan" title="Monsieur Trinh Xuan Thuan, fondateur de 4 Elements"></div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="flex justify-between">
+        <!-- footer gauche -->
+        <div class="footer-gauche">
+            <a href="Index.html" title="lien vers accueil hotels 4 éléments"><img class="logo anim-logo" src="./assets/logo/logo-noir.png" alt="logo des hotels 4 elements"></a>
+            <p>N'attendez plus pour vivre l'expérience 4 éléments le temps d'une nuit.</p>
+            <nav>
+                <ul class="flex align-center">
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page instagram"><img src="/assets/icon/instagram.svg" alt="logo d'instagram"></a></li>
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page facebook"><img src="/assets/icon/facebook.svg" alt="logo de facebook"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- footer centre -->
+        <div class="contact" id="contact">
+            <h5>Contact</h5>
+            <address>
+                <a target="_blank" href="https://www.google.fr/maps/place/Webecom-Formation/@45.449743,4.3788317,17z/data=!3m1!4b1!4m6!3m5!1s0x47f5aeb2af2210e3:0x3f15c6dd67ae31bb!8m2!3d45.4497393!4d4.3814066!16s%2Fg%2F1tmbvglc?entry=ttu"><span>Adresse :</span> 8 avenue exemple</a>
+                <p><span>Ouverture :</span> Tous les jours de 9h à 20h30</p>
+                <a href="tel:+330828028002"><span>Tél :</span> 33 08 280 28002</a>
+            </address>
+            <button class="btn-small">Réserver en ligne</button>
+        </div>
+        <!-- footer droite -->
+        <nav class="cgv">
+            <ul>
+                <li class="anim"><a href="Index.html"><span>Mentions légales</span></a></li>
+                <li class="anim"><a href="Index.html"><span>Crédits</span></a></li>
+                <li class="anim"><a href="Index.html"><span>CGV</span></a></li>
+                <li class="anim"><a href="Index.html"><span>Confidentialité</span></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

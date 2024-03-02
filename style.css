@@ -1,0 +1,883 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Playfair+Display:wght@500;700&display=swap');
+/*
+font-family: 'Karla', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@800&display=swap');
+/* spécial pour le petit dessin de la section createur */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #363A2B;
+    --secondary: #4F6234;
+    --tertiary: #D9C7B3;
+    --input: #E1D2C2;
+    --background: #E5E0DC;
+}
+
+/****************** GENERAL ******************/
+
+h1, h2, h3, h4{
+    font-family: 'Playfair Display', serif;
+}
+
+h5, p, .p-legend, a, button, .a-menu, label, input, select
+{
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2{
+    font-weight: 500;
+    font-size: 64px;
+}
+
+h3, h4, h5{
+    font-weight: 700;
+}
+
+p, .p-legend, a, button, .a-menu{
+    font-weight: 400;
+}
+
+h3{
+    font-size: 32px;
+}
+
+h4, .btn-large{
+    font-size: 24px;
+}
+
+h5, .btn-small, .btn-nobg, .a-menu, input, select{
+    font-size: 20px;
+}
+
+p, label, a{
+    font-size: 18px;
+}
+
+.p-legend{
+    font-size: 16px;
+    font-style: italic;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.btn-nobg{    
+    background: none;
+    color: var(--primary);
+    padding: 4px 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-small{
+    background-color: var(--secondary);
+    color: var(--background);
+    padding: 4px 16px;  
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-large{
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 8px 24px;  
+    border: none;
+    border-radius: 10px;
+}
+
+section{
+    margin-bottom: 120px;
+}
+
+:visited, :link, :active{
+    color: var(--primary);
+}
+
+.pr12{
+    padding-right: 12%;
+}
+
+.pl12{
+    padding-left: 12%;
+}
+
+.prl12{
+    padding: 0 12%;
+}
+
+/******** animations ************/
+
+.anim, .anim-logo{
+    transition: 0.3s ease;
+}
+
+.anim-logo:hover{
+    transform: scale(1.1);
+}
+
+.anim:hover{
+    transform: scale(1.2);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px var(--tertiary);
+}
+
+.img-animation{
+    transition: 0.3s ease;
+}
+
+.img-animation:hover{
+    transform: scale(1.1);
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px var(--tertiary);
+}
+
+/********************** HEADER *********************/
+
+header{
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding: 0 3%;
+    background-color: #e5e0dce7;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu{
+    gap: 24px;
+}
+
+.a-menu{
+    color: var(--primary);
+}
+
+.header-gauche{
+    width: 45%;
+    gap: 24px;
+}
+
+.header-droite{
+    width: 55%;
+    justify-content: flex-end;
+}
+
+.header-droite img{
+    height: 30px;
+}
+
+.header-btn{
+    margin-left: 60px;
+    gap: 16px;
+}
+
+/******************** HERO **********************/
+
+.hero video{
+    width: 100%;
+    height: 110vh;
+    object-fit: cover;
+    position: absolute;
+    top: -80px;
+    z-index: -1;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: calc(110vh - 80px);
+    background: linear-gradient(90deg, #363a2b00 0%, #363a2b7c 50%, #363A2B 100%);
+    margin-bottom: 350px;
+}
+
+h1{
+    color: var(--background);
+    width: 100%;
+    text-align: end;
+    padding-right: 3%;
+}
+
+form{
+    padding: 16px 16px;
+    background-color: var(--tertiary);
+    border-radius: 20px;
+    width: 680px;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    top: 30vh;
+}
+
+form h4{
+    width: 100%;
+}
+
+.form-date{
+    width: 250px;
+    margin-top: 16px;
+}
+
+.form-nbr{
+    width: 180px;
+    margin-top: 16px;
+}
+
+.form-hotel{
+    width: 180px;
+    margin-top: 16px;
+}
+
+form label, form input, form select{
+    width: 100%;
+    margin-top: 8px;
+}
+
+form input, form select{
+    background-color: var(--input);
+    border: none;
+    border-radius: 10px;
+    height: 65px;
+    color: var(--primary);
+    padding-left: 16px;
+}
+
+.form-btn{
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    top: 38px;
+}
+
+/******** section elements ********/
+
+.feu, .terre, .air, .eau{
+    width: 100%;
+}
+
+.container-descriptif{
+    width: 35%;
+    padding: 80px 0 80px 0;
+}
+
+.container-descriptif div, .container-descriptif>p, .container-descriptif button{
+    margin-top: 24px;
+}
+
+.container-descriptif h2, .container-descriptif div, .container-descriptif p{
+    width: 100%;
+}
+
+.container-descriptif div p{
+    margin-top: 8px;
+}
+
+.container-image{
+    width: 50%;
+}
+
+.img-grd{
+    width: 70%;
+}
+
+.img-petit{
+    width: 25%;
+}
+
+.img-petit img, .img-grd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/******** section concept-archi / createur *********/
+
+.createur h3{
+    width: 100%;
+}
+
+.concept-archi, .createur{
+    width: 100%;
+}
+
+.concept, .architecture, .mot-createur, .portrait-createur{
+    width: 40%;
+}
+
+.architecture p, .architecture h3, .architecture div, .concept p, .concept h3, .concept div, .createur p, .createur h3, .dessin{
+    margin-bottom: 24px;
+}
+
+.concept-archi h3, .concept-archi p, .img-concept, .img-archi{
+    width: 100%;
+}
+
+.img-concept, .img-archi{
+    height: 400px;
+}
+
+.img-concept img, .img-archi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mot-createur{
+    position: relative;
+    width: 45%;
+}
+
+.dessin{
+    width: 25%;
+    position: relative;
+    top: 20px;
+}
+
+.portrait-createur{
+    width: 45%;
+}
+
+.portrait-createur img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-vert{
+    color: var(--secondary);
+}
+
+/********** footer *********/
+
+footer{
+    padding: 5%;
+    background-color: white;
+}
+
+footer div, .cgv{
+    width: 25%;
+}
+
+.logo{
+    height: 60px;
+}
+
+.footer-gauche p, .footer-gauche nav{
+    margin-top: 24px;
+}
+
+.footer-gauche ul{
+    gap: 16px;
+}
+
+.contact address{
+    line-height: 24px;
+}
+
+.contact h5, .contact address{
+    margin-bottom: 24px;
+}
+
+address{
+    color: var(--primary);
+    font-style: normal;
+}
+
+address span{
+    font-weight: bold;
+}
+
+.cgv a{
+    font-weight: bold;
+    line-height: 48px;
+}
+
+/************* page feu ***********/
+
+.fire{
+    margin-top: 80px;
+}
+
+
+/***** section offre feu ******/
+
+.offre-feu h3{
+    width: 100%;
+}
+
+.offre-feu article{
+    width: 40%;
+}
+
+.img-offre{
+    width: 100%;
+    height: 500px;
+    margin: 70px 0;
+}
+
+.img-offre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services ul{
+    width: 100%;
+}
+.services li{
+    width: 40%;
+    gap: 16px;
+    line-height: 32px;
+}
+
+.mtb32{
+    margin: 32px 0;
+}
+
+.details{
+    color: var(--secondary);
+}
+
+.prix{
+    font-size: 24px;
+}
+
+.prix span{
+    font-weight: bold;
+}
+
+/****** services supp / activité ******/
+
+.carousel-sous-titre{
+    width: 100%;
+}
+
+.carousel-container{
+    width: 115%;
+    /*On active le scroll sur X pour voir ce qui dépasse du container*/
+    overflow-x: scroll; 
+    /*Permet d'arreter le scroll au début d'une vignette*/
+    scroll-snap-type: x mandatory;
+    /*Ebauche de customisation de la scrollbar (cf documentation si vous voulez aller plus loin)*/
+    scrollbar-color: var(--tertiary) var(--background);
+    scrollbar-width: thin;
+    padding: 8px 0;
+}
+
+.carousel-slide{
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+    gap: 64px;
+}
+
+.carousel-card{
+    scroll-snap-align: start;
+    width: 600px;
+    height: 450px;
+    text-align: end;
+    justify-content: end;
+    padding-right: 16px;
+    align-content: flex-end;
+    color: var(--background);
+}
+
+.carousel-descriptif{
+    width: 55%;
+    margin: 32px 0;
+}
+
+.carousel h4{
+    width: 100%;
+}
+
+.carousel-prix{
+    width: 100%;
+    margin-bottom: 48px;
+    font-weight: bold;
+}
+
+.carousel-btn{
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+.chauffeur{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/service-1-chauffeur.jpg);
+    background-size: cover;
+    background-position-y: -120px;
+}
+
+.dejeuner{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/service-2-dejeuner.jpg);
+    background-size: cover;
+}
+
+.repas{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/service-3-repas.jpg);
+    background-size: cover;
+}
+
+.guide{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/service-4-guide.jpg);
+    background-size: cover;
+}
+
+.traineau{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/activite-1-chien-traineaux.jpg);
+    background-size: cover;
+}
+
+.raquette{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/activite-2-rando-raquette.jpg);
+    background-size: cover;
+}
+
+.volcan{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/activite-3-volcan.png);
+    background-size: cover;
+    background-position-y: -120px;
+}
+
+.speleo{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 70%), url(assets/image/activite-4-speleologie.png);
+    background-size: cover;
+    background-position-y: -240px;
+}
+
+
+/******** vidéo *********/
+
+.video-feu h6{
+    display: none;
+}
+
+.video-feu video{
+    width: 100%;
+}
+
+/********* Avis ********/
+
+.avis h4{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.avis article{
+    width: 45%;
+    padding: 8px 16px;
+}
+
+.profil{
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.profil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+/********* Infos ***********/
+
+.infos h3{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.infos ul{
+    width: 100%;
+
+}
+
+.infos ul li{
+    width: 45%;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.w80{
+    width: 80%;
+}
+
+.w30{
+    width: 30%;
+}
+
+.infos h4{
+    margin: 60px 0 40px 0;
+}
+
+/*********** menu burger ***********/
+
+.menu-burger {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+  }
+  
+  .menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 8px;
+    background-color: #e5e0dce7;
+    transform: translateX(-200px);
+    transition: transform 0.6s ease;
+    line-height: 32px;
+    padding-top: 80px;
+    z-index: 1;
+  }
+  
+  .reserve{
+    color: var(--secondary);
+  }
+
+  .menu-lateral ul {
+    display: block;
+  }
+  
+  /* BURGER */
+  
+  /* Hide the default checkbox */
+  .menu-burger input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: none;
+  }
+  
+  .checkmark-burger {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    cursor: pointer;
+  }
+  
+  .checkmark-burger span{
+    width: 32px;
+    height: 2px;
+    background-color: var(--background);
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  .checkmark-burger span:nth-child(1) {
+    top: 10%;
+  }
+  
+  .checkmark-burger span:nth-child(2) {
+    top: 50%;
+  }
+  
+  .checkmark-burger span:nth-child(3) {
+    top: 90%;
+  }
+
+  .menu-burger input:checked + .checkmark-burger span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: var(--primary);
+  }
+  
+  .menu-burger input:checked + .checkmark-burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    background-color: var(--primary);
+  }
+  
+  .menu-burger input:checked + .checkmark-burger span:nth-child(3) {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    header, .hero{
+        background: #363a2b77;
+    }
+
+    .menu path{
+        fill: var(--background);
+    }
+    
+    .menu-burger {
+      display: block;
+    }
+    .menu-grd-ecran {
+      display: none;
+    }
+    #burger:checked ~ .menu-lateral {
+      transform: translateX(0);
+    }
+
+    h1, h2{
+        font-size: 48px;
+    }
+    
+    section{
+        margin-bottom: 60px;
+    }
+
+    h1{
+        padding-top: 10vh;
+    }
+
+    .container-descriptif, .container-image, .concept, .architecture, .mot-createur, .portrait-createur, .offre-feu article{
+        width: 100%;
+    }
+
+    .container-descriptif{
+        padding-right: 12%;
+    }
+
+    .img-offre{
+        height: 40vh;
+    }
+    
+    .feu, .terre, .archi-responsive, .createur-responsive{
+        flex-direction: column-reverse;
+    }
+
+    .air, .eau{
+        padding: 0 0 0 12%;
+    }
+
+    .createur-responsive{
+        display: flex;
+    }
+
+    .portrait-createur{
+        height: 40vh;
+    }
+
+    footer{
+        padding: 40px 12%;
+    }
+
+    footer div, .cgv{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .carousel-slide{
+        gap: 16px;
+    }
+
+    .carousel-card{
+        width: 300px;
+        height: 250px;
+    }
+
+    .carousel-prix{
+        margin-bottom: 24px;
+    }
+
+    .carousel-descriptif{
+        width: 80%;
+    }
+
+    .chauffeur{
+        background-position-y: -60px;
+    }
+
+    .volcan{
+        background-position-y: -40px;
+    }
+
+    .speleo{
+        background-position-y: -120px;
+    }
+
+    .avis article{
+        margin-top: 32px;
+    }
+
+    .avis article{
+        width: 100%;
+    }
+    
+    .infos ul li{
+        width: 100%;
+    }
+  }
+  
+
+@media screen and (max-width: 575px){
+     form{
+        width: 270px;
+        justify-content: center;
+        top: 25vh;
+    }
+
+    form h4{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .services ul li{
+        width: 100%;
+    }
+
+    .container-image{
+        height: 40vh;
+    }
+}
