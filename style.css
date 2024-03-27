@@ -74,6 +74,9 @@ body{
 a{
     text-decoration: none;
 }
+.btn:link, .btn:valid, .btn:visited{
+    color: var(--background)
+}
 
 ul{
     list-style: none;
@@ -154,12 +157,12 @@ section{
     cursor: pointer;
 }
 
-button{
+button, .btn{
     cursor: pointer;
     transition: 0.3s ease;
 }
 
-button:hover{
+button:hover, .btn:hover{
     transition: 0.3s;
     transform: scale(1.05);
     box-shadow: 2px 2px 2px var(--tertiary);
