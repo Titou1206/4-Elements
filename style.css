@@ -241,7 +241,7 @@ h1{
     padding-right: 3%;
 }
 
-form{
+.form-index{
     padding: 16px 16px;
     background-color: var(--tertiary);
     border-radius: 20px;
@@ -252,7 +252,7 @@ form{
     top: 30vh;
 }
 
-form h4{
+.form-index h4{
     width: 100%;
 }
 
@@ -271,12 +271,12 @@ form h4{
     margin-top: 16px;
 }
 
-form label, form input, form select{
+.form-index label, .form-index input, .form-index select{
     width: 100%;
     margin-top: 8px;
 }
 
-form input, form select{
+.form-index input, .form-index select{
     background-color: var(--input);
     border: none;
     border-radius: 10px;
@@ -750,6 +750,131 @@ address span{
     opacity: 0;
   }
   
+
+/* page réservation */
+.body-reservation{
+    background-color: white;
+}
+.main-reservation{
+    position: relative;
+    padding-top: 16px;
+}
+.form-reservation{
+    width: 50%;
+    max-width: 750px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: var(--input);
+    padding: 16px;
+    border-radius: 20px;
+}
+.form-reservation input, .form-reservation select{
+    border: solid 1px var(--tertiary);
+    border-radius: 8px;
+    padding-left: 16px;
+}
+.form-reservation input[type='checkbox']{
+    border: none;
+}
+.form-reservation span{
+    color: red;
+    font-weight: bold;
+}
+.info-repas{
+    font-size: 16px;
+}
+.block{
+    display: block;
+}
+
+.mr40{
+    margin-right: 40px;
+}
+.mt16{
+    margin-top: 16px;
+}
+.mt8{
+    margin-top: 8px;
+}
+.mb8{
+    margin-bottom: 8px;
+}
+.w300{
+    width: 300px;
+}
+.w100{
+    width: 100px;
+}
+.w200{
+    width: 200px;
+}
+.w400{
+    width: 400px;
+}
+.w500{
+    width: 500px;
+}
+.justifty-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.w640{
+    width: 640px;
+}
+.w60{
+    width: 60px;
+}
+.w250{
+    width: 250px;
+}
+.mr140{
+    margin-right: 140px;
+}
+.mb32{
+    margin-bottom: 32px;
+}
+
+.none{
+    display: none;
+}
+.recap-resa{
+    width: 100%;
+    /*height: calc(100vh - 80px);*/
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    padding: 16px;
+}
+.valid-form{
+    background-color: var(--secondary);
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: white;
+}
+.recap-resa>div{
+    width: 1000px;
+    background-color: #e5e0dcef;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 32px;
+}
+.container-btn-resa{
+    width: 100%;
+}
+input[type='submit']{
+    cursor: pointer;
+}
+
+.champ-error{
+    border: solid 1px red;
+}
+.p-error{
+    color: red;
+    font-size: 12px;
+}
+
   @media screen and (max-width: 1024px) {
     header, .hero{
         background: #363a2b77;

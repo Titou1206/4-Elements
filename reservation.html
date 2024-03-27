@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 4 Éléments : Explorez l'Harmonie Sensorielle - page de réservation</title>
+    <meta name="description" content="Réservez une expérience unique où l'architecture novatrice vous guide à travers une exploration sensorielle des quatre éléments. Réveillez vos sens et reconnectez-vous avec la nature au sein de nos hôtels inspirés, où chaque détail architectural témoigne d'une profonde connexion avec la terre, l'air, l'eau et le feu.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-reservation">
+    <!-- header -->
+    <header class="flex justify-between align-center">
+        <!-- menu burger -->
+        <div class="menu-burger">
+             <!-- W3C ressort en erreur car il ne faut pas mettre de div ou nav dans le label, mais on a pas le choix en full CSS, je laisse comme ça -->
+                <input type="checkbox" name="burger" id="burger">
+                <label class="checkmark-burger" for="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- menu lateral -->
+                <nav class="menu-lateral">
+                    <ul>
+                        <li><a href="Index.html" title="lien vers accueil hotels 4 éléments"><img class="logo" src="./assets/logo/logo-noir.png" alt="logo des hotels 4 elements"></a></li>
+                        <li><a class="a-menu animation" href="fire.html">Feu</a></li>
+                        <li><a class="a-menu" href="Index.html">Air</a></li>
+                        <li><a class="a-menu" href="Index.html">Terre</a></li>
+                        <li><a class="a-menu" href="Index.html">Eau</a></li>
+                        <li><a class="a-menu reserve" href="Index.html">Reserver</a></li>
+                        <li><a class="a-menu" href="Index.html">Se connecter</a></li>
+                        <li><a class="a-menu" href="#contact" title="lien vers l'onglet contact">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <!-- div gauche -->
+        <div class="header-gauche flex align-center menu-grd-ecran">
+            <!-- logo -->
+           <a href="Index.html" title="lien vers accueil hotels 4 éléments"><img class="logo anim-logo" src="./assets/logo/logo-noir.png" alt="logo des hotels 4 elements"></a>
+            <!-- menu hotel -->
+            <nav>
+                <ul class="menu flex">
+                    <li class="anim"><a class="a-menu" href="fire.html">Feu</a></li>
+                    <li class="anim"><a class="a-menu" href="Index.html">Air</a></li>
+                    <li class="anim"><a class="a-menu" href="Index.html">Terre</a></li>
+                    <li class="anim"><a class="a-menu" href="Index.html">Eau</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- div droite -->
+        <div class="header-droite flex align-center">
+            <!-- menu contact et réseaux -->
+            <nav>
+                <ul class="menu flex align-center">
+                    <li class="menu-grd-ecran anim"><a class="a-menu" href="#contact" title="lien vers l'onglet contact">Contact</a></li>
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page instagram"><svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.946 5.88965C7.84058 5.88965 5.33569 8.39453 5.33569 11.5C5.33569 14.6055 7.84058 17.1104 10.946 17.1104C14.0515 17.1104 16.5564 14.6055 16.5564 11.5C16.5564 8.39453 14.0515 5.88965 10.946 5.88965ZM10.946 15.1475C8.93921 15.1475 7.29858 13.5117 7.29858 11.5C7.29858 9.48828 8.93433 7.85254 10.946 7.85254C12.9578 7.85254 14.5935 9.48828 14.5935 11.5C14.5935 13.5117 12.9529 15.1475 10.946 15.1475ZM18.0945 5.66016C18.0945 6.3877 17.5085 6.96875 16.7859 6.96875C16.0584 6.96875 15.4773 6.38281 15.4773 5.66016C15.4773 4.9375 16.0632 4.35156 16.7859 4.35156C17.5085 4.35156 18.0945 4.9375 18.0945 5.66016ZM21.8103 6.98828C21.7273 5.23535 21.3269 3.68262 20.0427 2.40332C18.7634 1.12402 17.2107 0.723633 15.4578 0.635742C13.6511 0.533203 8.23608 0.533203 6.42944 0.635742C4.6814 0.71875 3.12866 1.11914 1.84448 2.39844C0.560303 3.67773 0.164795 5.23047 0.0769043 6.9834C-0.0256348 8.79004 -0.0256348 14.2051 0.0769043 16.0117C0.159912 17.7646 0.560303 19.3174 1.84448 20.5967C3.12866 21.876 4.67651 22.2764 6.42944 22.3643C8.23608 22.4668 13.6511 22.4668 15.4578 22.3643C17.2107 22.2812 18.7634 21.8809 20.0427 20.5967C21.322 19.3174 21.7224 17.7646 21.8103 16.0117C21.9128 14.2051 21.9128 8.79492 21.8103 6.98828ZM19.4763 17.9502C19.0955 18.9072 18.3582 19.6445 17.3962 20.0303C15.9558 20.6016 12.5378 20.4697 10.946 20.4697C9.35425 20.4697 5.9314 20.5967 4.49585 20.0303C3.53882 19.6494 2.80151 18.9121 2.41577 17.9502C1.84448 16.5098 1.97632 13.0918 1.97632 11.5C1.97632 9.9082 1.84937 6.48535 2.41577 5.0498C2.79663 4.09277 3.53394 3.35547 4.49585 2.96973C5.93628 2.39844 9.35425 2.53027 10.946 2.53027C12.5378 2.53027 15.9607 2.40332 17.3962 2.96973C18.3533 3.35059 19.0906 4.08789 19.4763 5.0498C20.0476 6.49023 19.9158 9.9082 19.9158 11.5C19.9158 13.0918 20.0476 16.5146 19.4763 17.9502Z" fill="#363A2B"/>
+                        </svg>
+                        </a></li>
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page facebook"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4185 0.5625H3.23096C2.60936 0.5625 2.01321 0.80943 1.57368 1.24897C1.13414 1.68851 0.887207 2.28465 0.887207 2.90625L0.887207 20.0938C0.887207 20.7154 1.13414 21.3115 1.57368 21.751C2.01321 22.1906 2.60936 22.4375 3.23096 22.4375H9.93262V15.0005H6.85645V11.5H9.93262V8.83203C9.93262 5.79736 11.7393 4.12109 14.5063 4.12109C15.8315 4.12109 17.2173 4.35742 17.2173 4.35742V7.33594H15.6904C14.186 7.33594 13.7168 8.26953 13.7168 9.22705V11.5H17.0752L16.5381 15.0005H13.7168V22.4375H20.4185C21.0401 22.4375 21.6362 22.1906 22.0757 21.751C22.5153 21.3115 22.7622 20.7154 22.7622 20.0938V2.90625C22.7622 2.28465 22.5153 1.68851 22.0757 1.24897C21.6362 0.80943 21.0401 0.5625 20.4185 0.5625Z" fill="#363A2B"/>
+                        </svg>
+                        </a></li>
+                </ul>
+            </nav>
+            <!-- bouton header -->
+            <div class="header-btn flex align-center menu-grd-ecran">
+                <button class="btn-small">Reserver</button>
+                <button class="btn-nobg">Se connecter</button>
+            </div>
+        </div>
+    </header>
+    <main class="main-reservation">
+        <!-- formulaire -->
+        <form action="" method="get" id="form-reservation" class="form-reservation" novalidate>
+            <fieldset>
+                <legend>Informations personnelle</legend>
+                <!-- nom et prénom -->
+                <div class="flex justifty-center">
+                    <!-- nom -->
+                    <div>
+                        <label class="block" for="nom">Nom:</label>
+                        <input class="mt8 mb8 w300 mr40" type="text" name="nom" id="nom" placeholder="Laugier">
+                        <p class="p-error mb8 w300 none" id="error-nom"></p>
+                    </div>
+                    <!-- prénom -->
+                    <div>
+                        <label class="block" for="prenom">Prénom:</label>
+                        <input class="mt8 mb8 w300" type="text" name="prenom" id="prenom" placeholder="Antoine">
+                        <p class="p-error mb8 w300 none" id="error-prenom"></p>
+                    </div>
+                </div>
+                <!-- adresse : n° - rue - CP et ville -->
+                <div>
+                    <div class="flex justifty-center">
+                        <p class="mt16 w640">Adresse de facturation:</p>
+                    </div>
+                    <div class="flex justifty-center">
+                        <!-- n° -->
+                        <div>
+                            <label class="block" for="num">N°:</label>
+                            <input class="mt8 mb8 w100 mr40" type="text" name="num" id="num" placeholder="1">
+                            <p class="p-error mb8 w100 none" id="error-num"></p>
+                        </div>
+                        <!-- rue -->
+                        <div>
+                            <label class="block" for="rue">Nom de rue:</label>
+                             <input class="mt8 mb8 w500" type="text" name="rue" id="rue" placeholder="Lotissement Chanibeau">
+                             <p class="p-error mb8 w500 none" id="error-rue"></p>
+                        </div>
+                    </div>                   
+                </div>
+                <!-- CP et ville -->
+                <div class="flex justifty-center">
+                    <!-- cp -->
+                    <div>
+                        <label class="block" for="cp">Code Postal:</label>
+                        <input class="mt8 mb8 w100 mr40" type="text" name="cp" id="cp" placeholder="43600">
+                        <p class="p-error mb8 w100 none" id="error-cp"></p>
+                    </div>
+                    <!-- ville -->
+                    <div>
+                        <label class="block" for="ville">Ville:</label>
+                        <input class="mt8 mb8 w500" type="text" name="ville" id="ville" placeholder="Sainte-Sigolène">
+                        <p class="p-error mb8 w500 none" id="error-ville"></p>
+                    </div>
+                </div>
+                <!-- email et tel -->
+                <div class="flex justifty-center">
+                    <!-- email -->
+                    <div>
+                        <label class="block" for="email">Email:</label>
+                        <input class="mt8 mb8 w400 mr40" type="email" name="email" id="email" placeholder="laugierantoine@gmail.com">
+                        <p class="p-error mb8 w400 none" id="error-email"></p>
+                    </div>
+                    <!-- tel -->
+                    <div>
+                        <label class="block" for="tel">Téléphone:</label>
+                        <input class="mt8 mb8 w200" type="tel" name="tel" id="tel" placeholder="0666529277">
+                        <p class="p-error mb8 w200 none" id="error-tel"></p>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="mt16">
+                <legend>Informations de réservations</legend>
+                <!-- hotel et chambre -->
+                <div class="flex justifty-center">
+                    <!-- hotel -->
+                    <div>
+                        <label class="block" for="hotel">Choisissez votre Hotel:</label>
+                        <select class="mt8 mb8 w200 mr40" name="hotel" id="hotel">
+                            <option value=""> - - - </option>
+                            <option value="hotel feu">Hotel Feu</option>
+                            <!-- 
+                            <option value="hotel air">Hotel Air</option>
+                            <option value="hotel eau">Hotel Eau</option>
+                            <option value="hotel terre">Hotel Terre</option>
+                             -->
+                        </select>
+                        <p class="p-error mb8 w200 none" id="error-hotel"></p>
+                    </div>
+                    <!-- chambre -->
+                    <div>
+                        <label class="block" for="chambre">Choisissez votre chambre:</label>
+                        <select class="mt8 mb8 w400" name="chambre" id="chambre">
+                            <option value=""> - - - </option>
+                            <option value="igloos" class="none">Igloos (500€/nuit)</option>
+                            <option value="laponie" class="none">Laponie (850€/nuit)</option>
+                        </select>
+                        <p class="p-error mb8 w400 none" id="error-chambre"></p>
+                    </div>
+                </div>
+                <!-- nbre personnes -->
+                <div class="flex justifty-center">
+                    <div class="w640">
+                        <input class="mt8 mb8 w60" type="number" name="nbr" id="nbr" max="2" min="1">
+                        <label for="nbr">Nombre de personnes:</label>
+                        <p class="p-error mb8 none" id="error-nbr"></p>
+                    </div>
+                    <!-- date arrivée -->
+                    <div>
+                        <label class="block" for="arrive">Date d'arrivée:</label>
+                        <input class="mt8 mb8 w250 mr140" type="date" name="arrive" id="arrive">
+                        <p class="p-error w250 mb8 none" id="error-arrive"></p>
+                    </div>
+                    <!-- date départ -->
+                    <div>                        
+                        <label class="block" for="depart">Date de départ: </label>
+                        <input class="mt8 mb8 w250" type="date" name="depart" id="depart">
+                        <p class="p-error w250 mb8 none" id="error-depart"></p>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="mt16">
+                <legend>Options et services supplémentaires:</legend>
+                <div class="flex justifty-center">
+                    <!-- chauffeur -->
+                    <div class="w640">
+                        <input class="mt8" type="checkbox" name="chauffeur" id="chauffeur" value="11">
+                        <label for="chauffeur">Chauffeur (11€ / jour):</label>
+                    </div>
+                    <div class="w640">
+                        <input class="mt8" type="checkbox" name="visite" id="visite" value="20">
+                        <label for="visite">Visite guidée du domaine et du parc naturel alentour (20€/personne):</label>
+                    </div>
+                    <!-- petit dej -->
+                    <div class="w640">
+                        <input class="mt8" type="checkbox" name="dej" id="dej" value="15">
+                        <label for="dej">Petit déjeuner (15€ / personne / jour):</label>
+                    </div>
+                </div>
+                <!-- repas -->
+                <div class="flex justifty-center">
+                    <div class="flex w640 align-center">
+                        <div class="w300">
+                            <p>Repas (25€ / personnes / repas): </p>
+                            <input class="mt8" type="checkbox" name="midi" id="midi" value="25">
+                            <label for="midi">Midi</label>
+                            <input class="mt8" type="checkbox" name="soir" id="soir" value="25">
+                            <label for="soir">Soir</label>
+                            <input class="mt8" type="checkbox" name="ponctuel" id="ponctuel" value="25">
+                            <label for="ponctuel">Ponctuel<span>*</span></label>
+                        </div>
+                    </div>
+                        <p class="w640 info-repas"><span>*</span>: dans ce cas le prix du repas ne sera pas comptabilisé dans la réservation mais sera dû directement auprès du service de restauration, merci de prévenir la veille</p>
+                </div>
+                <!--  -->
+                <div class="repas-checked flex justifty-center none">
+                    <div class="w640">
+                        <p>Avez vous un régime alimentaire particulier:</p>
+                        <input class="mt8" type="radio" name="regime" id="non">
+                        <label for="non">Non</label>
+                        <input class="mt8" type="radio" name="regime" id="vegan">
+                        <label for="vegan">Végan</label>
+                        <input class="mt8" type="radio" name="regime" id="vegetarien">
+                        <label for="vegetarien">Végétarien</label>
+                    </div>
+                    <div class="w640">
+                        <p>Avez vous des allergies ou intolérances: </p>
+                        <input class="mt8 mb8" type="checkbox" name="gluten" id="gluten">
+                        <label for="gluten">Gluten</label>
+                        <input class="mt8 mb8" type="checkbox" name="lactose" id="lactose">
+                        <label for="lactose">Lactose</label>
+                        <input class="mt8 mb8" type="checkbox" name="autres" id="autres">
+                        <label for="autres">Autres</label>
+                        <input class="autres-details mt8 mb8 w400 none" type="text" name="autres-details" id="autres-details" placeholder="entrez ici votre allergie ou intolérance">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="flex justifty-center">
+                <input id="valid-form" class="valid-form mt16" type="submit" value="Validez votre réservation">
+            </div>
+        </form>
+        <div class="recap-resa none">
+            <!--  
+            <div>
+                <div>
+                    <h3>Récapitulatif de votre réservation</h3>
+                    <h4 class="mt16">Informations personnelles</h4>
+                    <div class="flex">
+                        <p class="mt8 mr40">Nom: </p>
+                        <p class="mt8">Prénom: </p>
+                    </div>
+                    <p class="mt8">Adresse de facturation: </p>
+                    <div class="flex">
+                        <p class="mt8 mr40">Email: </p>
+                        <p class="mt8">Tél.: </p>
+                    </div>
+                    <h4 class="mt16">Informations de réservations</h4>
+                    <div class="flex">
+                        <p class="mt8 mr40">Hotel: </p>
+                        <p class="mt8">Chambre: (prix)</p>
+                    </div>
+                    <div class="flex">
+                        <p class="mt8 mr40">date d'arrivé: </p>
+                        <p class="mt8">Date de départ: </p>
+                    </div>
+                    <div class="flex">
+                        <p class="mt8 mr40">Nombre de personnes: </p>
+                        <p class="mt8">Nombre de jour: </p>
+                    </div>
+                    <h5 class="mt8">Montant de votre séjour hors options: </h5>
+                    <h4 class="mt16">Options et services supplémentaires</h4>
+                    <p class="mt8">Chauffeur: (prix)</p>
+                    <p class="mt8">Petit déjeuner: (prix/personne/jour soir montant sur séjour)</p>
+                    <div class="flex">
+                        <p class="mt8 mr40">Repas (prix/personne/jour soir montant sur séjour):</p>
+                        <p class="mt8 mr40">Midi: </p>
+                        <p class="mt8 mr40">Soir: </p>
+                        <p class="mt8">Ponctuel*:</p>
+                    </div>
+                    <p class="mt8">* le prix du repas n'est pas comptabilisé dans la réservation et sera dû directement auprès du service de restauration, merci de prévenir la veille</p>
+                    <p class="mt8">Régime spécifique: </p>
+                    <p class="mt8">Allergies ou intolérance alimentaire</p>
+                    <h5 class="mt16">Montant total de vos options: </h5>
+                    <h3 class="mt16 mb32">Montant total de votre séjour: </h3>
+                </div>
+                <div class="container-btn-resa flex justifty-center mt16">
+                    <button id="paiement" class="btn-small mr40">Confirmer et passer au paiement</button>
+                    <button id="annule" class="btn-nobg bt">Annuler la réservation</button>
+                </div>
+            </div>
+            -->
+        </div>
+    </main>
+    <footer class="flex justify-between">
+        <!-- footer gauche -->
+        <div class="footer-gauche">
+            <a href="Index.html" title="lien vers accueil hotels 4 éléments"><img class="logo anim-logo" src="./assets/logo/logo-noir.png" alt="logo des hotels 4 elements"></a>
+            <p>N'attendez plus pour vivre l'expérience 4 éléments le temps d'une nuit.</p>
+            <nav>
+                <ul class="flex align-center">
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page instagram"><img src="/assets/icon/instagram.svg" alt="logo d'instagram"></a></li>
+                    <li class="anim"><a target="_blank" href="google.com" title="lien vers la page facebook"><img src="/assets/icon/facebook.svg" alt="logo de facebook"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- footer centre -->
+        <div class="contact" id="contact">
+            <h5>Contact</h5>
+            <address>
+                <a target="_blank" href="https://www.google.fr/maps/place/Webecom-Formation/@45.449743,4.3788317,17z/data=!3m1!4b1!4m6!3m5!1s0x47f5aeb2af2210e3:0x3f15c6dd67ae31bb!8m2!3d45.4497393!4d4.3814066!16s%2Fg%2F1tmbvglc?entry=ttu"><span>Adresse :</span> 8 avenue exemple</a>
+                <p><span>Ouverture :</span> Tous les jours de 9h à 20h30</p>
+                <a href="tel:+330828028002"><span>Tél :</span> 33 08 280 28002</a>
+            </address>
+            <button class="btn-small">Réserver en ligne</button>
+        </div>
+        <!-- footer droite -->
+        <nav class="cgv">
+            <ul>
+                <li class="anim"><a href="Index.html"><span>Mentions légales</span></a></li>
+                <li class="anim"><a href="Index.html"><span>Crédits</span></a></li>
+                <li class="anim"><a href="Index.html"><span>CGV</span></a></li>
+                <li class="anim"><a href="Index.html"><span>Confidentialité</span></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
