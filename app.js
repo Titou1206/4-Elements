@@ -201,25 +201,25 @@ function recapInfos(){
     <div>
         <h3>Récapitulatif de votre réservation</h3>
         <h4 class="mt16">Informations personnelles</h4>
-        <div class="flex">
+        <div class="flex small-column">
             <p class="mt8 mr40">Nom: ${nom.value}</p>
             <p class="mt8">Prénom: ${prenom.value}</p>
         </div>
         <p class="mt8">Adresse de facturation: ${num.value} ${rue.value}, ${cp.value} ${ville.value}</p>
-        <div class="flex">
+        <div class="flex small-column">
             <p class="mt8 mr40">Email: ${email.value}</p>
             <p class="mt8">Tél.: ${tel.value}</p>
         </div>
         <h4 class="mt16">Informations de réservations</h4>
-        <div class="flex">
+        <div class="flex small-column">
             <p class="mt8 mr40">Hotel: ${hotel.value}</p>
             <p class="mt8">Chambre: ${chambre.selectedOptions[0].value} (${chPrix}€/jour)</p>
         </div>
-        <div class="flex">
+        <div class="flex small-column">
             <p class="mt8 mr40">Date d'arrivé: ${a.toLocaleDateString()}</p>
             <p class="mt8">Date de départ: ${d.toLocaleDateString()}</p>
         </div>
-        <div class="flex">
+        <div class="flex small-column">
             <p class="mt8 mr40">Nombre de personnes: ${nbr.value}</p>
             <p class="mt8">Nombre de jour: ${nbJour}</p>
         </div>
@@ -237,7 +237,7 @@ function recapInfos(){
         <h5 class="mt16">Montant total de vos options: ${prixOptions}€</h5>
         <h3 class="mt16 mb32">Montant total de votre séjour: ${prixSejour}€</h3>
     </div>
-    <div class="container-btn-resa flex justifty-center mt16">
+    <div class="small-column container-btn-resa flex justifty-center mt16">
         <button id="paiement" class="btn-small mr40">Confirmer et passer au paiement</button>
         <button id="annule" class="btn-nobg bt">Annuler la réservation</button>
     </div>
