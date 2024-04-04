@@ -1014,7 +1014,8 @@ input[type='submit']{
     .form-reservation{
         width: 300px;
     }
-    .form-reservation div{
-        flex-direction: column;
-    }
+    .small100 {width: 100%;}
+    .small80 {width: 80%;}
+    .small-mr0{margin-right: 0;}
+    .small-column { flex-direction: column;}
 }

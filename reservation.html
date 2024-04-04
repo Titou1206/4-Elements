@@ -76,79 +76,79 @@
             <fieldset>
                 <legend>Informations personnelle</legend>
                 <!-- nom et prénom -->
-                <div class="flex justifty-center">
+                <div class="small-column flex justifty-center">
                     <!-- nom -->
                     <div>
                         <label class="block" for="nom">Nom:</label>
-                        <input class="mt8 mb8 w300 mr40" type="text" name="nom" id="nom" placeholder="Laugier">
-                        <p class="p-error mb8 w300 none" id="error-nom"></p>
+                        <input class="small100 mt8 mb8 w300 mr40" type="text" name="nom" id="nom" placeholder="Laugier">
+                        <p class="small100 p-error mb8 w300 none" id="error-nom"></p>
                     </div>
                     <!-- prénom -->
                     <div>
                         <label class="block" for="prenom">Prénom:</label>
-                        <input class="mt8 mb8 w300" type="text" name="prenom" id="prenom" placeholder="Antoine">
-                        <p class="p-error mb8 w300 none" id="error-prenom"></p>
+                        <input class="small100 mt8 mb8 w300" type="text" name="prenom" id="prenom" placeholder="Antoine">
+                        <p class="small100 p-error mb8 w300 none" id="error-prenom"></p>
                     </div>
                 </div>
                 <!-- adresse : n° - rue - CP et ville -->
                 <div>
-                    <div class="flex justifty-center">
-                        <p class="mt16 w640">Adresse de facturation:</p>
+                    <div class="small-column flex justifty-center">
+                        <p class="mt16 w640 small100">Adresse de facturation:</p>
                     </div>
-                    <div class="flex justifty-center">
+                    <div class="small-column flex justifty-center">
                         <!-- n° -->
                         <div>
                             <label class="block" for="num">N°:</label>
-                            <input class="mt8 mb8 w100 mr40" type="text" name="num" id="num" placeholder="1">
-                            <p class="p-error mb8 w100 none" id="error-num"></p>
+                            <input class="small100 mt8 mb8 w100 mr40" type="text" name="num" id="num" placeholder="1">
+                            <p class="small100 p-error mb8 w100 none" id="error-num"></p>
                         </div>
                         <!-- rue -->
                         <div>
                             <label class="block" for="rue">Nom de rue:</label>
-                             <input class="mt8 mb8 w500" type="text" name="rue" id="rue" placeholder="Lotissement Chanibeau">
-                             <p class="p-error mb8 w500 none" id="error-rue"></p>
+                             <input class="small100 mt8 mb8 w500" type="text" name="rue" id="rue" placeholder="Lotissement Chanibeau">
+                             <p class="small100 p-error mb8 w500 none" id="error-rue"></p>
                         </div>
                     </div>                   
                 </div>
                 <!-- CP et ville -->
-                <div class="flex justifty-center">
+                <div class="small-column flex justifty-center">
                     <!-- cp -->
                     <div>
                         <label class="block" for="cp">Code Postal:</label>
-                        <input class="mt8 mb8 w100 mr40" type="text" name="cp" id="cp" placeholder="43600">
-                        <p class="p-error mb8 w100 none" id="error-cp"></p>
+                        <input class="small100 mt8 mb8 w100 mr40" type="text" name="cp" id="cp" placeholder="43600">
+                        <p class="small100 p-error mb8 w100 none" id="error-cp"></p>
                     </div>
                     <!-- ville -->
                     <div>
                         <label class="block" for="ville">Ville:</label>
-                        <input class="mt8 mb8 w500" type="text" name="ville" id="ville" placeholder="Sainte-Sigolène">
-                        <p class="p-error mb8 w500 none" id="error-ville"></p>
+                        <input class="small100 mt8 mb8 w500" type="text" name="ville" id="ville" placeholder="Sainte-Sigolène">
+                        <p class="small100 p-error mb8 w500 none" id="error-ville"></p>
                     </div>
                 </div>
                 <!-- email et tel -->
-                <div class="flex justifty-center">
+                <div class="small-column flex justifty-center">
                     <!-- email -->
                     <div>
                         <label class="block" for="email">Email:</label>
-                        <input class="mt8 mb8 w400 mr40" type="email" name="email" id="email" placeholder="laugierantoine@gmail.com">
-                        <p class="p-error mb8 w400 none" id="error-email"></p>
+                        <input class="small100 mt8 mb8 w400 mr40" type="email" name="email" id="email" placeholder="laugierantoine@gmail.com">
+                        <p class="small100 p-error mb8 w400 none" id="error-email"></p>
                     </div>
                     <!-- tel -->
                     <div>
                         <label class="block" for="tel">Téléphone:</label>
-                        <input class="mt8 mb8 w200" type="tel" name="tel" id="tel" placeholder="0666529277">
-                        <p class="p-error mb8 w200 none" id="error-tel"></p>
+                        <input class="small100 mt8 mb8 w200" type="tel" name="tel" id="tel" placeholder="0666529277">
+                        <p class="small100 p-error mb8 w200 none" id="error-tel"></p>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="mt16">
                 <legend>Informations de réservations</legend>
                 <!-- hotel et chambre -->
-                <div class="flex justifty-center">
+                <div class="small-column flex justifty-center">
                     <!-- hotel -->
                     <div>
                         <label class="block" for="hotel">Choisissez votre Hotel:</label>
-                        <select class="mt8 mb8 w200 mr40" name="hotel" id="hotel">
+                        <select class="small100 mt8 mb8 w200 mr40 small-mr0" name="hotel" id="hotel">
                             <option value=""> - - - </option>
                             <option value="hotel feu">Hotel Feu</option>
                             <!-- 
@@ -157,62 +157,62 @@
                             <option value="hotel terre">Hotel Terre</option>
                              -->
                         </select>
-                        <p class="p-error mb8 w200 none" id="error-hotel"></p>
+                        <p class="small100 p-error mb8 w200 none" id="error-hotel"></p>
                     </div>
                     <!-- chambre -->
                     <div>
                         <label class="block" for="chambre">Choisissez votre chambre:</label>
-                        <select class="mt8 mb8 w400" name="chambre" id="chambre">
+                        <select class="small100 mt8 mb8 w400" name="chambre" id="chambre">
                             <option value=""> - - - </option>
                             <option value="igloos" class="none">Igloos (500€/nuit)</option>
                             <option value="laponie" class="none">Laponie (850€/nuit)</option>
                         </select>
-                        <p class="p-error mb8 w400 none" id="error-chambre"></p>
+                        <p class="small100 p-error mb8 w400 none" id="error-chambre"></p>
                     </div>
                 </div>
                 <!-- nbre personnes -->
-                <div class="flex justifty-center">
-                    <div class="w640">
-                        <input class="mt8 mb8 w60" type="number" name="nbr" id="nbr" max="2" min="1">
+                <div class="small-column flex justifty-center">
+                    <div class="small100 w640">
+                        <input class="small100 mt8 mb8 w60" type="number" name="nbr" id="nbr" max="2" min="1">
                         <label for="nbr">Nombre de personnes:</label>
-                        <p class="p-error mb8 none" id="error-nbr"></p>
+                        <p class="small100 p-error mb8 none" id="error-nbr"></p>
                     </div>
                     <!-- date arrivée -->
                     <div>
                         <label class="block" for="arrive">Date d'arrivée:</label>
-                        <input class="mt8 mb8 w250 mr140" type="date" name="arrive" id="arrive">
-                        <p class="p-error w250 mb8 none" id="error-arrive"></p>
+                        <input class="small100 mt8 mb8 w250 mr140 small-mr0" type="date" name="arrive" id="arrive">
+                        <p class="small100 p-error w250 mb8 none" id="error-arrive"></p>
                     </div>
                     <!-- date départ -->
                     <div>                        
                         <label class="block" for="depart">Date de départ: </label>
-                        <input class="mt8 mb8 w250" type="date" name="depart" id="depart">
-                        <p class="p-error w250 mb8 none" id="error-depart"></p>
+                        <input class="small100 mt8 mb8 w250" type="date" name="depart" id="depart">
+                        <p class="small100 p-error w250 mb8 none" id="error-depart"></p>
                     </div>
                 </div>
             </fieldset>
             <fieldset class="mt16">
                 <legend>Options et services supplémentaires:</legend>
-                <div class="flex justifty-center">
+                <div class="small80 flex justifty-center">
                     <!-- chauffeur -->
-                    <div class="w640">
+                    <div class="small100 w640">
                         <input class="mt8" type="checkbox" name="chauffeur" id="chauffeur" value="11">
-                        <label for="chauffeur">Chauffeur (11€ / jour):</label>
+                        <labelsmall80  for="chauffeur">Chauffeur (11€ / jour):</label>
                     </div>
-                    <div class="w640">
+                    <div class="small100 w640">
                         <input class="mt8" type="checkbox" name="visite" id="visite" value="20">
-                        <label for="visite">Visite guidée du domaine et du parc naturel alentour (20€/personne):</label>
+                        <labelsmall80  for="visite">Visite guidée du domaine et du parc naturel alentour (20€/personne):</label>
                     </div>
                     <!-- petit dej -->
-                    <div class="w640">
+                    <div class="small100 w640">
                         <input class="mt8" type="checkbox" name="dej" id="dej" value="15">
-                        <label for="dej">Petit déjeuner (15€ / personne / jour):</label>
+                        <labelsmall80  for="dej">Petit déjeuner (15€ / personne / jour):</label>
                     </div>
                 </div>
                 <!-- repas -->
-                <div class="flex justifty-center">
-                    <div class="flex w640 align-center">
-                        <div class="w300">
+                <div class="small80 flex justifty-center">
+                    <div class="small100 flex w640 align-center">
+                        <div class="small100 w300">
                             <p>Repas (25€ / personnes / repas): </p>
                             <input class="mt8" type="checkbox" name="midi" id="midi" value="25">
                             <label for="midi">Midi</label>
@@ -222,11 +222,11 @@
                             <label for="ponctuel">Ponctuel<span>*</span></label>
                         </div>
                     </div>
-                        <p class="w640 info-repas"><span>*</span>: dans ce cas le prix du repas ne sera pas comptabilisé dans la réservation mais sera dû directement auprès du service de restauration, merci de prévenir la veille</p>
+                        <p class="small100 w640 info-repas"><span>*</span>: dans ce cas le prix du repas ne sera pas comptabilisé dans la réservation mais sera dû directement auprès du service de restauration, merci de prévenir la veille</p>
                 </div>
                 <!--  -->
-                <div class="repas-checked flex justifty-center none">
-                    <div class="w640">
+                <div class="small80 repas-checked flex justifty-center none">
+                    <div class="small100 w640">
                         <p>Avez vous un régime alimentaire particulier:</p>
                         <input class="mt8" type="radio" name="regime" id="non">
                         <label for="non">Non</label>
@@ -235,7 +235,7 @@
                         <input class="mt8" type="radio" name="regime" id="vegetarien">
                         <label for="vegetarien">Végétarien</label>
                     </div>
-                    <div class="w640">
+                    <div class="small100 w640">
                         <p>Avez vous des allergies ou intolérances: </p>
                         <input class="mt8 mb8" type="checkbox" name="gluten" id="gluten">
                         <label for="gluten">Gluten</label>
@@ -243,7 +243,7 @@
                         <label for="lactose">Lactose</label>
                         <input class="mt8 mb8" type="checkbox" name="autres" id="autres">
                         <label for="autres">Autres</label>
-                        <input class="autres-details mt8 mb8 w400 none" type="text" name="autres-details" id="autres-details" placeholder="entrez ici votre allergie ou intolérance">
+                        <input class="small100 autres-details mt8 mb8 w400 none" type="text" name="autres-details" id="autres-details" placeholder="entrez ici votre allergie ou intolérance">
                     </div>
                 </div>
             </fieldset>
