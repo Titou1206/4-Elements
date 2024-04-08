@@ -900,6 +900,11 @@ input[type='submit']{
     h1, h2{
         font-size: 48px;
     }
+    h3 {font-size: 28px;}
+    h4 {font-size: 20px;}
+    h5 {font-size: 18px;}
+    p, a {font-size: 16px;} 
+
     
     section{
         margin-bottom: 60px;
@@ -986,6 +991,12 @@ input[type='submit']{
     .infos ul li{
         width: 100%;
     }
+
+    .form-reservation {
+        width: 95%;
+    }
+    .recap-resa { width: 100%; padding: 8px; }
+    .recap-resa>div { width: 100%; padding: 16px;}
   }
   
 
@@ -1011,12 +1022,12 @@ input[type='submit']{
         height: 40vh;
     }
 
-    .form-reservation, .recap-resa{
-        width: 300px;
-    }
+    
     .small100 {width: 100%;}
     .small80 {width: 80%;}
     .small-mr0{margin-right: 0;}
     .small-column { flex-direction: column;}
     .form-reservation p, .form-reservation label{ font-size: 14px;}
+
+    .recap-resa button{ margin-right: 0;}
 }
